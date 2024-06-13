@@ -1,0 +1,12 @@
+@use '~bootstrap/scss/bootstrap';
+
+.footer-container {
+  position: relative;
+  height: 100px;
+}
+
+.footer-container p {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}

@@ -1,0 +1,23 @@
+<div>
+  <h1>User info</h1>
+  <% name = user.name %>
+  <%= image_tag user.get_profile_image %>
+  <table class="table">
+    <tr></tr>
+    <tr>
+      <th>name</th>
+      <th><%= user.name %></th>
+    </tr>
+    <tr>
+      <th>introduction</th>
+      <th><%= user.introduction %></th>
+    </tr>
+    <tr>
+      <th>
+      <%= link_to edit_user_path(user), class: "btn btn-default", style: "border: 1px solid black; width: 150px;" do %>
+      <i class="fas fa-user-cog"></i>
+      <% end %>
+      </th>
+      </tr>
+      </table>
+      </div>
